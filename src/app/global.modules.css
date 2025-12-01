@@ -1,0 +1,55 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Color de fondo */
+body {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- HEADER Y FOOTER --- */
+header, footer {
+  width: 100%;
+}
+
+/* Contenedor entre Header y Footer */
+.layout-wrapper {
+  display: flex;
+  flex: 1;
+  min-height: 0; /* importante para evitar scroll innecesario */
+}
+
+/* Menu a la izquierda */
+.layout-wrapper > nav {
+  width: 250px;
+  background: white;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+/* Contenido a la derecha */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* si el contenido es largo, solo él hace scroll */
+}
+
+.layout-wrapper {
+  display: flex;
+  flex: 1;
+  min-height: 0;   /* ← evita scroll fantasma */
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}

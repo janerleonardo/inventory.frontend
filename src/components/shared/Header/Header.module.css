@@ -1,0 +1,43 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 0.7rem 1.4rem; /* más compacto */
+
+  background: linear-gradient(90deg, #667eea, #431572);
+  color: white;
+
+  border-radius: 10px; /* bordes suaves */
+  margin: 0.6rem auto; /* pequeña separación superior */
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.left h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* --- RIGHT SIDE (User + Logout) --- */
+.right {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+
+  font-size: 0.95rem;
+}
+
+.logout {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.logout:hover {
+  opacity: 0.8;
+}

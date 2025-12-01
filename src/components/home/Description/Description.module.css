@@ -1,0 +1,36 @@
+/* Estilos para el contenedor principal .Description */
+.Description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.25rem;
+  max-width: 1000px;
+  margin: 6rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 1.375rem;
+}
+
+/* Estilos para la imagen dentro de .Description */
+.Description > img {
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 4rem rgba(255, 255, 255, 0.2);
+  width: 500px;
+  height: 300px;
+}
+
+/* Estilos para el contenedor de texto */
+.Description__text > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  /* La variable $color-secondary debe ser reemplazada por un valor CSS real, por ejemplo: */
+  color: blueviolet; /* Ejemplo de color, reemplaza con el valor real */
+  margin: 0;
+}
+
+/* Estilos para el párrafo dentro del contenedor de texto */
+.Description__text > p {
+  font-size: 1.5rem;
+  line-height: 1.75;
+  /* La variable $text-color debe ser reemplazada por un valor CSS real, por ejemplo: */
+  color: #333; /* Ejemplo de color, reemplaza con el valor real */
+}
