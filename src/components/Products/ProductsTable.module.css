@@ -1,0 +1,96 @@
+/* ProductsTable.module.css - Estilos solo para la tabla */
+
+/* Contenedor de la tabla, sirve como margen superior */
+.tableContainer {
+  margin-top: 20px;
+}
+
+/* Estilo para el campo de búsqueda */
+.searchInput {
+  width: 300px; 
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+  /* Asegura que ocupe todo el ancho disponible si se necesita, 
+     pero en este caso es ancho fijo para replicar la imagen */
+}
+
+/* Estilo general de la tabla (dentro de una tarjeta blanca) */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white; /* Fondo blanco */
+  border-radius: 8px; 
+  overflow: hidden; /* Necesario para que el borde redondeado funcione */
+  /* Sombra para darle el aspecto de "tarjeta" */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+/* Cabecera de la tabla */
+.table th {
+  background-color: #fff; /* Fondo blanco */
+  color: #6c757d; /* Texto gris */
+  font-weight: 500;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 0.9em;
+  border-bottom: 2px solid #f0f0f0; /* Separador sutil */
+}
+
+/* Filas del cuerpo de la tabla */
+.table tbody tr {
+  border-bottom: 1px solid #f0f0f0; /* Separador de filas muy sutil */
+}
+
+/* Quitar el borde inferior de la última fila */
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Celdas de la tabla */
+.table td {
+  padding: 15px 20px;
+  vertical-align: middle;
+  color: #333;
+}
+
+/* Estilo para el botón de acción ("Abrir Modal") */
+.actionButton {
+  background-color: #007bff; /* Azul estándar */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  transition: background-color 0.3s ease;
+}
+
+.actionButton:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el stock bajo (resaltado naranja para stock <= 5) */
+.stockLow {
+    background-color: #ff9800; /* Naranja */
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 80px; 
+    text-align: center;
+}
+
+/* Mensaje de no productos encontrados */
+.noProducts {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-style: italic;
+}

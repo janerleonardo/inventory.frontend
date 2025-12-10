@@ -1,0 +1,12 @@
+
+.container {
+  display: flex;
+  min-height: 100vh; /* Ocupa al menos la altura completa de la vista */
+  background-color: #f8f9fa; /* Fondo gris muy claro para la página */
+}
+
+/* Estilos para el área de contenido principal (a la derecha de la sidebar) */
+.mainContent {
+  flex-grow: 1; /* Ocupa el espacio restante */
+  padding: 30px;
+}

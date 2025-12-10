@@ -1,0 +1,113 @@
+/* ProductModal.module.css */
+
+/* 1. Overlay (Superposición Oscura) */
+.overlay {
+  position: fixed; /* Fija el modal a la ventana del navegador */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté por encima de todo lo demás */
+}
+
+/* 2. Contenedor del Modal (La "ventana" blanca) */
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px; /* Tamaño máximo razonable para un formulario */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Para que los bordes redondeados se apliquen al header/footer */
+  animation: fadeIn 0.3s ease-out; /* Animación de aparición */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 3. Encabezado del Modal */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+/* Botón de Cerrar (X) */
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+/* 4. Cuerpo del Modal (Formulario) */
+.body {
+  padding: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Importante para el 100% de ancho */
+}
+
+/* 5. Pie de página del Modal (Botones de acción) */
+.footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.cancelButton,
+.saveButton {
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.cancelButton {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.saveButton {
+  background-color: #007bff; /* Azul, igual que el botón de la tabla */
+  color: white;
+  border: none;
+}

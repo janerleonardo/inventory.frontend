@@ -1,0 +1,49 @@
+/* StockSpinner.module.css */
+
+/* Contenedor principal que usa Flexbox para alinear los elementos */
+.spinnerContainer {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc; /* Borde sutil alrededor del control */
+  border-radius: 4px;
+  overflow: hidden; /* Asegura que los botones se vean continuos */
+}
+
+/* Estilo para los botones de incrementar/decrementar */
+.spinnerButton {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 100%; /* Ocupa la altura del contenedor */
+  transition: background-color 0.2s;
+}
+
+.spinnerButton:hover:not(:disabled) {
+  background-color: #e2e6ea; /* Oscurecer al pasar el ratón */
+}
+
+/* Estilo para los botones deshabilitados (ej. stock <= 0) */
+.spinnerButton:disabled {
+  color: #adb5bd; /* Texto más claro */
+  cursor: not-allowed;
+  background-color: #f8f9fa; /* Mismo fondo que el normal */
+}
+
+/* Estilo para el campo de texto (donde se muestra la cantidad) */
+.spinnerInput {
+  text-align: center;
+  width: 50px; /* Ancho fijo para el número */
+  padding: 8px 0;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-size: 1em;
+  font-weight: 500;
+  color: #333;
+  /* Importante: Evita el borde azul de enfoque en muchos navegadores */
+  outline: none; 
+}

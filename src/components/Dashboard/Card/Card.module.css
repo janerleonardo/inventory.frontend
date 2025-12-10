@@ -1,0 +1,52 @@
+/* Card.module.css */
+
+.card {
+    /* Estilos base para todas las tarjetas */
+    padding: 1rem;
+    border-radius: 0.75rem; /* similar a rounded-xl */
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    width: 256px; /* similar a w-64 */
+    height: 96px; /* Ajuste para el diseño */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.colorViolet { 
+    background: linear-gradient(to right, #8b5cf6, #4f46e5); 
+}
+
+.colorRed { 
+    background: linear-gradient(to right, #ec4899, #f43f5e); 
+}
+
+.colorBlue { 
+    background: linear-gradient(to right, #22d3ee, #3b82f6); 
+}
+
+.colorGreen { 
+    background: linear-gradient(to right, #84cc16, #10b981); 
+}
+
+
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 300; /* font-light */
+}
+
+.icon {
+    font-size: 1.5rem; /* text-2xl */
+    opacity: 0.75;
+}
+
+.value {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 500; /* font-bold */
+}

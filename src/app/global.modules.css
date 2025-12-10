@@ -14,6 +14,8 @@ body {
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
 }
 
 /* --- HEADER Y FOOTER --- */

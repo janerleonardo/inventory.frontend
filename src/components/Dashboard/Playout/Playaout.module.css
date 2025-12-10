@@ -1,0 +1,10 @@
+.metricsContainer {
+    /* 1. Contenedor para las tarjetas pequeñas */
+    display: flex;
+    /* 2. Disponer las tarjetas horizontalmente */
+    flex-direction: row;
+    /* 3. Espacio entre las tarjetas */
+    gap: 1rem;
+    /* 4. Asegurar que las tarjetas se envuelvan si la pantalla es pequeña */
+    flex-wrap: wrap; 
+}
