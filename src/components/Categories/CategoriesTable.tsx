@@ -30,7 +30,7 @@ export default function CategoriesTable({ category }: CategoriesTableProps) {
   const handleActionClick = (category: Category) => {
     setSelectedCategory(category);
     setIsModalOpen(true);
-    setCategoriesList([]);
+
   };
 
   // Función para cerrar el modal
@@ -73,7 +73,7 @@ export default function CategoriesTable({ category }: CategoriesTableProps) {
                   onClick={() => handleActionClick(category)}
                   className={styles.actionButton}
                 >
-                  Abrir Modal
+                  ...
                 </button>
               </td>
             </tr>

@@ -11,7 +11,7 @@ export default async function ProductsPage() {
     <div className={styles.container}>       
       {/* 4. Contenido principal */}
       <div className={styles.mainContent}>
-        <h1>Lista de Categorias</h1> {/* Título principal */}
+        <h1>Lista de Categorias</h1> 
         <CategoriesTable category={products} />
       </div>
     </div>

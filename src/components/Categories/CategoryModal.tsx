@@ -1,7 +1,7 @@
 "use client";
 
-import styles from "./CategoriesTable.module.css";
-import { Category } from "../../../domain/category"; // Asegúrate de la ruta correcta
+import styles from "./CategoryModal.module.css";
+import { Category } from "../../../domain/category";
 
 interface CategoryModalProps {
   category: Category | null; 

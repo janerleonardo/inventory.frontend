@@ -11,6 +11,8 @@ interface ProductModalProps {
 
 export default function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
   if (!isOpen || !product) {
+    console.log("ProductModal: product or isOpen is null");
+    
     return null; // No renderiza nada si no está abierto o no hay producto
   }
 

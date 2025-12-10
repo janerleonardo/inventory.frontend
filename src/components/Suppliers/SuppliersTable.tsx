@@ -29,7 +29,7 @@ export default function SuppliersTable({ supplier }: CategoriesTableProps) {
   const handleActionClick = (supplier: Supplier) => {
     setSelectedSupplier(supplier);
     setIsModalOpen(true);
-    setSuppliersList([]);
+
   };
 
   // Función para cerrar el modal
@@ -78,7 +78,7 @@ export default function SuppliersTable({ supplier }: CategoriesTableProps) {
                   onClick={() => handleActionClick(supplier)}
                   className={styles.actionButton}
                 >
-                  Abrir Modal
+                  ...
                 </button>
               </td>
             </tr>

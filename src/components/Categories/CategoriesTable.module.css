@@ -56,8 +56,8 @@
 
 /* Estilo para el botón de acción ("Abrir Modal") */
 .actionButton {
-  background-color: #007bff; /* Azul estándar */
-  color: white;
+  background-color: #ffffff; /* Azul estándar */
+  color: rgb(0, 0, 0);
   border: none;
   padding: 8px 15px;
   border-radius: 4px;

@@ -92,7 +92,7 @@ export default function ProductsTable({ products }: ProductsTableProps) {
                   onClick={() => handleActionClick(product)}
                   className={styles.actionButton}
                 >
-                  Abrir Modal
+                  ...
                 </button>
               </td>
             </tr>

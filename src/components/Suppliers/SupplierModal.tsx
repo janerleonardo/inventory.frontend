@@ -11,7 +11,7 @@ interface SupplierModalProps {
 
 export default function SupplierModal({ supplier, isOpen, onClose }: SupplierModalProps) {
   if (!isOpen || !supplier) {
-    return null; // No renderiza nada si no está abierto o no hay producto
+    return null; 
   }
 
   // Función para evitar que el clic dentro del modal cierre la ventana
@@ -29,7 +29,7 @@ export default function SupplierModal({ supplier, isOpen, onClose }: SupplierMod
         <div className={styles.header}>
           <h2>Editar Proveedores: {supplier.name}</h2>
           <button className={styles.closeButton} onClick={onClose}>
-            &times; {/* Símbolo de "x" para cerrar */}
+            &times; 
           </button>
         </div>
 
@@ -40,10 +40,21 @@ export default function SupplierModal({ supplier, isOpen, onClose }: SupplierMod
               <input type="text" id="name" defaultValue={supplier.name} className={styles.input} disabled/>
             </div>
             <div className={styles.formGroup}>
-              <label htmlFor="description">Descripción</label>
-              <textarea id="description" defaultValue={supplier.contactName} className={styles.input} rows={3} disabled />
+              <label htmlFor="contactName">Nombre de contacto</label>
+              <input type="text" id="contactName" defaultValue={supplier.contactName} className={styles.input}  disabled />
             </div>
-
+            <div className={styles.formGroup}>
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" defaultValue={supplier.email} className={styles.input}  disabled />
+            </div>
+            <div className={styles.formGroup}>
+              <label htmlFor="phone">Telefono</label>
+              <input type="tel" id="phone" defaultValue={supplier.phone} className={styles.input}  disabled />
+            </div>
+            <div className={styles.formGroup}>
+              <label htmlFor="address">Direccion</label>
+              <input type="text" id="adress" defaultValue={supplier.address} className={styles.input}  disabled />
+            </div>
           </form>
         </div>
 
