@@ -92,3 +92,16 @@
   color: #6c757d;
   font-style: italic;
 }
+
+.saveButton {
+  background-color: #007bff; /* Azul estándar */
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  transition: background-color 0.3s ease;
+}
